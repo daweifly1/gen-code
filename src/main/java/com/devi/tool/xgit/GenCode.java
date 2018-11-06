@@ -64,7 +64,7 @@ public class GenCode {
         mapperBean.setBeanName(clazz.getSimpleName());
         mapperBean.setFistLowerBeanName(mapperBean.getBeanName().substring(0, 1).toLowerCase() + mapperBean.getBeanName().substring(1));
         mapperBean.setTableName("T_WAREHOUSE" + genColum(clazz.getSimpleName()));
-        List<MapperBean.ModelProperties> list = new ArrayList<>();
+        List<MapperBean.ModelProperties> list = new ArrayList();
         for (Field f : fields) {
             //打印每个属性的类型名字
             System.out.println(f.getType().getName() + ":" + f.getName());

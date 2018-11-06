@@ -208,7 +208,7 @@ public class GenCodeFromJson {
 
     public static int getRandomInt(int length, Object t) {
         if (null != t) {
-            return (int) t;
+            return (Integer) t;
         }
         Random random = new Random();
         StringBuffer sb = new StringBuffer();
@@ -217,7 +217,7 @@ public class GenCodeFromJson {
 
     public static long getRandomLong(int length, Object t) {
         if (null != t) {
-            return (long) t;
+            return (Long) t;
         }
         Random random = new Random();
         StringBuffer sb = new StringBuffer();
